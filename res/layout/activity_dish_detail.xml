@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <ImageView
+				android:id="@+id/ivDish"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:scaleType="centerCrop"
+				android:background="@android:drawable/divider_horizontal_bright" />
+		
+		    <LinearLayout
+		        android:id="@+id/layCode"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+				android:padding="10dp"
+				android:gravity="center_vertical"
+		        android:background="@color/white"
+		        >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp"
+		            android:text="菜品编码：" />
+		        
+		        <TextView
+		            android:id="@+id/tvCode"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp" />
+		
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layType"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+				android:padding="10dp"
+				android:gravity="center_vertical"
+		        android:background="@color/white"
+		        >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp"
+		            android:text="菜品分类：" />
+		        
+		        <TextView
+		            android:id="@+id/tvType"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp" />
+		
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layPrice"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+				android:padding="10dp"
+				android:gravity="center_vertical"
+		        android:background="@color/white"
+		        >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp"
+		            android:text="价　　格：" />
+		        
+		        <TextView
+		            android:id="@+id/tvPrice"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="16dip"
+    	            android:textColor="@color/price"
+		            />
+		
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layInfo"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+				android:padding="10dp"
+				android:gravity="top"
+		        android:background="@color/white"
+		        >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp"
+		            android:text="菜品简介：" />
+		        
+		        <TextView
+		            android:id="@+id/tvInfo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp" />
+		
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layHotel"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+				android:padding="10dp"
+				android:gravity="center_vertical"
+		        android:background="@color/white"
+		        >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp"
+		            android:text="所属餐厅：" />
+		        
+		        <TextView
+		            android:id="@+id/tvHotel"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp" />
+		
+		    </LinearLayout>
+		    <!-- 
+		    <LinearLayout
+		        android:id="@+id/layCuisines"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+				android:padding="10dp"
+		        android:background="@color/white"
+		        >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp"
+		            android:text="所属菜系：" />
+		        
+		        <TextView
+		            android:id="@+id/tvCuisines"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="14dp" />
+		
+		    </LinearLayout>
+		     -->
+		    <WebView
+		        android:id="@+id/wvContent"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp" />
+            
+        </LinearLayout>
+    </ScrollView>
+    
+    
+
+</LinearLayout>

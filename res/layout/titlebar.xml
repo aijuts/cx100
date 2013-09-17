@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/ivLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="0dip"
+        android:src="@drawable/left_button_style" />
+
+    <com.aijuts.cx100.view.AlwaysMarqueeTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:scrollHorizontally="true"
+		android:marqueeRepeatLimit="marquee_forever"
+	    android:ellipsize="marquee"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:text="@string/app_name" />
+    
+    <ImageView
+        android:id="@+id/ivRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="5dip"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="5dip"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/pbWait"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="45dip" />
+
+</FrameLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="14dp"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+			<!-- 
+            <android.support.v4.view.ViewPager
+				android:id="@+id/vpHotel"
+			    android:layout_width="match_parent"
+			    android:layout_height="200dip"
+			    >
+			</android.support.v4.view.ViewPager>
+			 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                
+                <FrameLayout 
+                    android:id="@+id/layHotel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/image_button_style"
+                    >
+                    <ImageView
+	                    android:id="@+id/ivHotel1"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="150dp"
+	                    android:layout_gravity="center"
+	                    android:layout_margin="1dp"
+	                    android:scaleType="centerCrop"
+	        			/>
+                    <TextView
+                        android:id="@+id/tvHotel1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|bottom"
+                        android:gravity="center_vertical"
+                        android:layout_margin="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:text="hotel name"
+                        android:background="@drawable/transparent"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/layHotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layHotel1"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    >
+
+                    <FrameLayout
+                        android:id="@+id/layHotel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="1.5dp"
+                        android:layout_weight="1"
+						android:background="@drawable/image_button_style"
+                        >
+                        <ImageView
+		                    android:id="@+id/ivHotel2"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="150dp"
+		                    android:layout_margin="1dp"
+		                    android:layout_gravity="center"
+		                    android:scaleType="centerCrop" />
+                        <TextView
+	                        android:id="@+id/tvHotel2"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center_vertical|bottom"
+	                        android:gravity="center_vertical"
+	                        android:layout_margin="1dp"
+	                        android:paddingLeft="5dp"
+	                        android:paddingRight="5dp"
+	                        android:singleLine="true"
+	                        android:textColor="@color/white"
+	                        android:text="hotel name"
+	                        android:background="@drawable/transparent"
+	                        />
+                    </FrameLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="1.5dp"
+                        android:layout_weight="1"
+                        >
+                        <FrameLayout 
+                            android:id="@+id/layHotel3"
+                            android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="1.5dp"
+		                    android:layout_weight="1"
+		                    android:background="@drawable/image_button_style"
+                            >
+                            <ImageView
+			                    android:id="@+id/ivHotel3"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="72.5dp"
+			                    android:layout_margin="1dp"
+			                    android:scaleType="centerCrop" />
+                            <TextView
+		                        android:id="@+id/tvHotel3"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="wrap_content"
+		                        android:layout_gravity="center_vertical|bottom"
+		                        android:gravity="center_vertical"
+		                        android:layout_margin="1dp"
+		                        android:paddingLeft="5dp"
+		                        android:paddingRight="5dp"
+		                        android:singleLine="true"
+		                        android:textColor="@color/white"
+		                        android:text="hotel name"
+		                        android:background="@drawable/transparent"
+		                        />
+                        </FrameLayout>
+                        <FrameLayout 
+                            android:id="@+id/layHotel4"
+                            android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="1.5dp"
+		                    android:layout_weight="1"
+		                    android:background="@drawable/image_button_style"
+                            >
+                            <ImageView
+			                    android:id="@+id/ivHotel4"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="72.5dp"
+			                    android:layout_margin="1dp"
+			                    android:scaleType="centerCrop" />
+                            <TextView
+		                        android:id="@+id/tvHotel4"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="wrap_content"
+		                        android:layout_gravity="center_vertical|bottom"
+		                        android:gravity="center_vertical"
+		                        android:layout_margin="1dp"
+		                        android:paddingLeft="5dp"
+		                        android:paddingRight="5dp"
+		                        android:singleLine="true"
+		                        android:textColor="@color/white"
+		                        android:text="hotel name"
+		                        android:background="@drawable/transparent"
+		                        />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                
+                <FrameLayout 
+                    android:id="@+id/layHotel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layHotel"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/image_button_style"
+                    >
+                    <ImageView
+	                    android:id="@+id/ivHotel5"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="150dp"
+	                    android:layout_margin="1dp"
+	                    android:scaleType="centerCrop" />
+                    <TextView
+                        android:id="@+id/tvHotel5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|bottom"
+                        android:gravity="center_vertical"
+                        android:layout_margin="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:text="hotel name"
+                        android:background="@drawable/transparent"
+                        />
+                </FrameLayout>
+                
+            </RelativeLayout>
+            
+            <com.aijuts.cx100.view.MyGridView
+		        android:id="@+id/gvTitle"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="4dp"
+		        android:horizontalSpacing="4dp"
+		        android:verticalSpacing="4dp"
+		        android:numColumns="3" >
+		    </com.aijuts.cx100.view.MyGridView>
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:background="@color/black"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:text="正在获取我的位置..." />
+
+</FrameLayout>

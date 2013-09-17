@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                >
+                
+                <TextView
+                    android:id="@+id/tvMember"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center_vertical"
+				    android:layout_margin="10dp"
+				    android:textSize="16dp"
+				    android:textColor="@color/black"
+				    android:text="用户信息" />
+                <!-- 
+                <EditText
+	                android:id="@+id/etMember"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_marginBottom="10dp"
+	                android:background="@drawable/search_edit"
+	                android:inputType="textMultiLine"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:scrollHorizontally="false"
+	                android:singleLine="false"
+	                android:visibility="gone"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+                 -->
+                 
+                <EditText
+	            	android:id="@+id/etMember"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_marginBottom="10dp"
+	                android:background="@drawable/search_edit"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:visibility="gone"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                <EditText
+	            	android:id="@+id/etMemberEmail"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_marginBottom="10dp"
+	                android:background="@drawable/search_edit"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:digits="1234567890qwertyuiopasdfghjklzxcvbnm_@."
+	                android:visibility="gone"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                <EditText
+	            	android:id="@+id/etMemberBirthday"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_marginBottom="10dp"
+	                android:background="@drawable/search_edit"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:editable="false"
+	                android:visibility="gone"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                <LinearLayout
+                    android:id="@+id/laySex"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="0dp"
+		            android:gravity="center_vertical"
+		            android:visibility="gone"
+		            >
+		            <TextView
+		                android:id="@+id/tvSex"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dp"
+		                android:text="请选择"
+		                android:textAppearance="?android:attr/textAppearanceSmall" />
+		            <RadioGroup
+		                android:id="@+id/radioGroup1"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:orientation="horizontal"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="10dp"
+		                >
+		                <RadioButton
+		                    android:id="@+id/radioMale"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_weight="1"
+		                    android:checked="true"
+		                    android:text="　先　生"
+		                    android:textAppearance="?android:attr/textAppearanceSmall" />
+		                <RadioButton
+		                    android:id="@+id/radioFemale"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_weight="1"
+		                    android:text="　女　士"
+		                    android:textAppearance="?android:attr/textAppearanceSmall" />
+		            </RadioGroup>
+		        </LinearLayout>
+		        
+                <LinearLayout
+                    android:id="@+id/layBlood"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="0dp"
+		            android:gravity="center_vertical"
+		            android:visibility="gone"
+		            >
+		            <TextView
+		                android:id="@+id/tvBlood"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dp"
+		                android:text="请选择"
+		                android:textAppearance="?android:attr/textAppearanceSmall" />
+		            <RadioGroup
+		                android:id="@+id/rgBlood"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="10dp"
+		                >
+		                <RadioButton
+		                    android:id="@+id/rbBloodA"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_weight="1"
+		                    android:checked="true"
+		                    android:text="　A　型血"
+		                    android:textAppearance="?android:attr/textAppearanceSmall" />
+		                <RadioButton
+		                    android:id="@+id/rbBloodB"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_weight="1"
+		                    android:text="　B　型血"
+		                    android:textAppearance="?android:attr/textAppearanceSmall" />
+		                <RadioButton
+		                    android:id="@+id/rbBloodAB"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_weight="1"
+		                    android:checked="true"
+		                    android:text="　AB　型血"
+		                    android:textAppearance="?android:attr/textAppearanceSmall" />
+		                <RadioButton
+		                    android:id="@+id/rbBloodO"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_weight="1"
+		                    android:text="　O　型血"
+		                    android:textAppearance="?android:attr/textAppearanceSmall" />
+		            </RadioGroup>
+		        </LinearLayout>
+		        
+                <com.aijuts.cx100.view.MyGridView 
+                    android:id="@+id/GvCuisines"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:numColumns="3"
+		            android:visibility="gone"
+                    ></com.aijuts.cx100.view.MyGridView>
+                 
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

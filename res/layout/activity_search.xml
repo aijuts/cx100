@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <FrameLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:padding="0dp"
+	            android:background="@color/white"
+	            >
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="55dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:background="@drawable/search_edit"
+                    android:hint="Search"
+                    android:text=""
+                    android:ems="10" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/search" />
+                
+            </FrameLayout>
+            
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_marginTop="5dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+		        android:background="@color/white"
+		        >
+
+                <TextView
+                    android:id="@+id/tvCuisines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/white_button_style"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="菜系" />
+                
+                <com.aijuts.cx100.view.MyGridView
+			        android:id="@+id/gvCuisines"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+			        android:numColumns="3" >
+			    </com.aijuts.cx100.view.MyGridView>
+
+		    </LinearLayout>
+		    
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_marginTop="5dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+		        android:background="@color/white"
+		        >
+
+                <TextView
+                    android:id="@+id/tvPurpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/white_button_style"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="目的" />
+                
+                <com.aijuts.cx100.view.MyGridView
+			        android:id="@+id/gvPurpose"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+			        android:numColumns="3" >
+			    </com.aijuts.cx100.view.MyGridView>
+
+		    </LinearLayout>
+		    
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_marginTop="5dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+		        android:background="@color/white"
+		        >
+
+                <TextView
+                    android:id="@+id/tvPercapita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/white_button_style"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="人均" />
+                
+                <com.aijuts.cx100.view.MyGridView
+			        android:id="@+id/gvPercapita"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+			        android:numColumns="3" >
+			    </com.aijuts.cx100.view.MyGridView>
+
+		    </LinearLayout>
+		    
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_marginTop="5dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+		        android:background="@color/white"
+		        >
+
+                <TextView
+                    android:id="@+id/tvAdminArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/white_button_style"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="行政区" />
+                
+                <com.aijuts.cx100.view.MyGridView
+			        android:id="@+id/gvAdminArea"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+			        android:numColumns="3" >
+			    </com.aijuts.cx100.view.MyGridView>
+
+		    </LinearLayout>
+		    
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_marginTop="5dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+		        android:background="@color/white"
+		        >
+
+                <TextView
+                    android:id="@+id/tvCircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/white_button_style"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="商圈" />
+                
+                <com.aijuts.cx100.view.MyGridView
+			        android:id="@+id/gvCircle"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+			        android:numColumns="3" >
+			    </com.aijuts.cx100.view.MyGridView>
+
+		    </LinearLayout>
+		    
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_marginTop="5dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+		        android:background="@color/white"
+		        >
+
+                <TextView
+                    android:id="@+id/tvSubway"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/white_button_style"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="地铁" />
+                
+                <com.aijuts.cx100.view.MyGridView
+			        android:id="@+id/gvSubway"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+			        android:numColumns="3" >
+			    </com.aijuts.cx100.view.MyGridView>
+
+		    </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

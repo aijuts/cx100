@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/no_button_style"
+    >
+
+    <ImageView
+        android:id="@+id/ivTitle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:background="@android:drawable/divider_horizontal_bright" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" >
+        
+        <TextView
+	        android:id="@+id/tvTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top"
+	        android:layout_marginRight="45dp"
+	        android:maxLines="1"
+	        android:ellipsize="end"
+	        android:textSize="16dip"
+	        android:textColor="@color/black"
+	        android:text="酒店名称" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+            
+            <RatingBar
+		    	android:id="@+id/rbScore"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="2dip"
+		    	android:isIndicator="true"
+		    	android:numStars="5"
+		    	android:rating="3"
+		    	style="@style/foodRatingBar"
+		    ></RatingBar>
+
+            <TextView
+                android:id="@+id/tvPerCapita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rbScore"
+                android:layout_marginLeft="5dp"
+                android:textSize="14dip"
+                android:text="人均：" />
+
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            >
+            
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="6"
+                android:textSize="14dip"
+                android:text="地址" />
+
+            <TextView
+                android:id="@+id/tvCuisines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:maxLength="6"
+                android:textSize="14dip"
+                android:text="菜系" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:textSize="14dip"
+            android:text="距离" />
+        
+    </FrameLayout>
+
+</LinearLayout>

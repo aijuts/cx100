@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+			
+            <FrameLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+		        
+                <android.support.v4.view.ViewPager
+					android:id="@+id/vpHotel"
+				    android:layout_width="match_parent"
+				    android:layout_height="200dip"
+				    android:layout_gravity="center"
+				    >
+				</android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:background="@drawable/transparent"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvKouwei"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:text="口味" />
+
+                    <TextView
+                        android:id="@+id/tvhuanjing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:text="环境" />
+
+                    <TextView
+                        android:id="@+id/tvFuwu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:text="服务" />
+
+                    <TextView
+                        android:id="@+id/tvRenjun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:text="人均" />
+
+                </LinearLayout>
+                
+		    </FrameLayout>
+		    
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_margin="5dp"
+		        android:background="@color/white"
+		        android:visibility="visible"
+		        >
+
+                <Button
+                    android:id="@+id/btnBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/booking_button_style"
+                    android:text="预　定" />
+
+                <Button
+                    android:id="@+id/btnCollection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/booking_button_style"
+                    android:text="收　藏" />
+                
+            </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layCuisines"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_margin="5dp"
+		        android:background="@color/white"
+		        >
+		        
+		        <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="10dp"
+			        android:gravity="center_vertical"
+			        android:background="@drawable/title_bg"
+			        android:textSize="16dp"
+			        android:textColor="@color/black"
+			        android:text="菜系" />
+		        
+		        <com.aijuts.cx100.view.MyGridView
+				    android:id="@+id/gvCaixi"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_margin="5dp"
+				    android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+				    android:numColumns="3"
+				    >
+				</com.aijuts.cx100.view.MyGridView>
+		        
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:id="@+id/tvYysj"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:padding="10dp"
+		        android:background="@color/white"
+		        android:textSize="14dp"
+		        android:text="营业时间" />
+		    
+		    <LinearLayout
+		        android:id="@+id/layPurpose"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_margin="5dp"
+		        android:background="@color/white"
+		        >
+		        
+		        <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="10dp"
+			        android:gravity="center_vertical"
+			        android:background="@drawable/title_bg"
+			        android:textSize="16dp"
+			        android:textColor="@color/black"
+			        android:text="设施与服务" />
+		        
+		        <com.aijuts.cx100.view.MyGridView
+				    android:id="@+id/gvSsyfw"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_margin="5dp"
+				    android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+				    android:numColumns="3"
+				    >
+				</com.aijuts.cx100.view.MyGridView>
+				
+		        <com.aijuts.cx100.view.FixGridLayout 
+		            android:id="@+id/fglPurpose"
+		            android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:visibility="gone"
+		            ></com.aijuts.cx100.view.FixGridLayout>
+		        
+		    </LinearLayout>
+		    
+		    <FrameLayout 
+		        android:id="@+id/layPhone"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:padding="10dp"
+		        android:background="@drawable/white_button_style"
+		        >
+		        <TextView
+			        android:id="@+id/tvPhone"
+			        android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:layout_gravity="center_vertical"
+		        	android:layout_marginRight="40dp"
+			        android:textSize="14dp"
+			        android:text="电话" />
+		        <ImageView 
+		            android:id="@+id/ivPhone"
+			        android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:layout_gravity="center_vertical|right"
+		        	android:src="@drawable/icon_phone"
+		            />
+		    </FrameLayout>
+		    
+		    <FrameLayout 
+		        android:id="@+id/layAddress"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:padding="10dp"
+		        android:background="@drawable/white_button_style"
+		        >
+		        <TextView
+			        android:id="@+id/tvAddress"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical"
+		        	android:layout_marginRight="40dp"
+			        android:textSize="14dp"
+			        android:text="地址" />
+		        <ImageView 
+		            android:id="@+id/ivAddress"
+			        android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:layout_gravity="center_vertical|right"
+		        	android:src="@drawable/icon_gps"
+		            />
+		    </FrameLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layCooking"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_margin="5dp"
+		        android:background="@color/white"
+		        >
+		        
+		        <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="10dp"
+			        android:gravity="center_vertical"
+			        android:background="@drawable/title_bg"
+			        android:textSize="16dp"
+			        android:textColor="@color/black"
+			        android:text="菜品" />
+		        
+		        <com.aijuts.cx100.view.MyGridView
+				    android:id="@+id/gvResCooking"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_margin="5dp"
+				    android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+		            android:numColumns="3"
+				    >
+				</com.aijuts.cx100.view.MyGridView>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layNews"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_margin="5dp"
+		        android:gravity="center_horizontal"
+		        android:background="@color/white"
+		        >
+		        
+		        <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="10dp"
+			        android:gravity="center_vertical"
+			        android:background="@drawable/title_bg"
+			        android:textSize="16dp"
+			        android:textColor="@color/black"
+			        android:text="餐厅动态" />
+		        
+		        <com.aijuts.cx100.view.MyListView
+				    android:id="@+id/lvResNews"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    >
+				</com.aijuts.cx100.view.MyListView>
+				
+		        <Button 
+		            android:id="@+id/btnResNews"
+		            style="?android:attr/buttonStyleSmall"
+		            android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="5dp"
+				    android:background="@drawable/more_button_style"
+				    android:text=""
+		            />
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layOrder"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_margin="5dp"
+		        android:gravity="center_horizontal"
+		        android:background="@color/white"
+		        >
+		        
+		        <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="10dp"
+			        android:gravity="center_vertical"
+			        android:background="@drawable/title_bg"
+			        android:textSize="16dp"
+			        android:textColor="@color/black"
+			        android:text="订单记录" />
+		        
+		        <com.aijuts.cx100.view.MyListView
+				    android:id="@+id/lvOrder"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    >
+				</com.aijuts.cx100.view.MyListView>
+				
+		        <Button 
+		            android:id="@+id/btnOrder"
+		            style="?android:attr/buttonStyleSmall"
+		            android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="5dp"
+				    android:background="@drawable/more_button_style"
+				    android:text=""
+		            />
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layReview"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_margin="5dp"
+		        android:gravity="center_horizontal"
+		        android:background="@color/white"
+		        >
+		        
+		        <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="10dp"
+			        android:gravity="center_vertical"
+			        android:background="@drawable/title_bg"
+			        android:textSize="16dp"
+			        android:textColor="@color/black"
+			        android:text="餐厅点评" />
+		        
+		        <com.aijuts.cx100.view.MyListView
+				    android:id="@+id/lvReview"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    >
+				</com.aijuts.cx100.view.MyListView>
+				
+		        <Button 
+		            android:id="@+id/btnReview"
+		            style="?android:attr/buttonStyleSmall"
+		            android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="5dp"
+				    android:background="@drawable/more_button_style"
+				    android:text=""
+		            />
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/layInfo"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_margin="5dp"
+		        android:background="@color/white"
+		        >
+		        
+		        <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="10dp"
+			        android:gravity="center_vertical"
+			        android:background="@drawable/title_bg"
+			        android:textSize="16dp"
+			        android:textColor="@color/black"
+			        android:text="餐厅简介" />
+		
+		        <WebView
+			        android:id="@+id/wvInfo"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="0dp" />
+		        
+		    </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
