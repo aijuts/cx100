@@ -47,7 +47,7 @@ public class AccountActivity extends Activity {
 	private ProgressDialog pdWait;
 	private TextView tvTitle;
 	private ImageView ivLeft, ivUser, ivNickname;
-	private FinalBitmap finalBitmap; 
+	private FinalBitmap finalBitmap;
 	private GetWebServiceData getWebServiceData;
 	private Member member;
 	private int userid;
