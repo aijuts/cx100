@@ -527,7 +527,7 @@ public class AccountActivity extends Activity {
 				break;
 			}
 			startActivityForResult(intent, 1);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2); 
+			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
