@@ -136,7 +136,7 @@ public class SearchActivity extends Activity {
 				imm.hideSoftInputFromWindow(etSearch.getWindowToken(), 0);
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -303,7 +303,7 @@ public class SearchActivity extends Activity {
 				imm.hideSoftInputFromWindow(etSearch.getWindowToken(), 0);
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}
@@ -418,7 +418,7 @@ public class SearchActivity extends Activity {
 			bundle.putString("likeName", "0");
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -437,7 +437,7 @@ public class SearchActivity extends Activity {
 			bundle.putString("likeName", "0");
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -456,7 +456,7 @@ public class SearchActivity extends Activity {
 			bundle.putString("likeName", "0");
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -475,7 +475,7 @@ public class SearchActivity extends Activity {
 			bundle.putString("likeName", "0");
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -494,7 +494,7 @@ public class SearchActivity extends Activity {
 			bundle.putString("likeName", "0");
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -513,7 +513,7 @@ public class SearchActivity extends Activity {
 			bundle.putString("likeName", "0");
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -536,7 +536,7 @@ public class SearchActivity extends Activity {
 			bundle.putString("likeName", likeName.trim());
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}

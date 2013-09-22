@@ -147,7 +147,7 @@ public class AccountUpdateActivity extends Activity {
 			}
 			location.setMbUpdateInfo("");
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -423,7 +423,7 @@ public class AccountUpdateActivity extends Activity {
 			intent.putExtra("info", memberUpdateData.getUpdateInfo());
 			setResult(RESULT_OK, intent);
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			break;
 		case 2:
 			Toast.makeText(AccountUpdateActivity.this, memberUpdateData.getUpdateInfo(), Toast.LENGTH_SHORT).show();
@@ -432,7 +432,7 @@ public class AccountUpdateActivity extends Activity {
 			intent = new Intent(AccountUpdateActivity.this, AccountActivity.class);
 			setResult(1, intent);
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			break;
 		}
 	}
@@ -724,7 +724,7 @@ public class AccountUpdateActivity extends Activity {
 			switch (n) {
 			case 1:
 				finish();
-				overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//				overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 				break;
 			case 2:
 				loadingInfo = "正在更新个人资料";

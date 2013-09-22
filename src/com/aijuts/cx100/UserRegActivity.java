@@ -83,7 +83,7 @@ public class UserRegActivity extends Activity {
 				imm.hideSoftInputFromWindow(etUserName.getWindowToken(), 0);
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -99,7 +99,7 @@ public class UserRegActivity extends Activity {
 				imm.hideSoftInputFromWindow(etUserName.getWindowToken(), 0);
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}
@@ -224,7 +224,7 @@ public class UserRegActivity extends Activity {
 			bundle.putString("userid", userData.getUserid());
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 //			intent.putExtra("info", "这是测试数据");
 //			setResult(RESULT_OK, intent);
 			finish();

@@ -222,7 +222,7 @@ public class HotelDetailActivity extends Activity {
 				Constants.list_seller_detail = null;
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -412,7 +412,7 @@ public class HotelDetailActivity extends Activity {
 			layPhone.setOnClickListener(new PhoneClick());
 			
 			tvAddress.setText("µØÖ·£º" + sellerDetailData.getAddr());
-			layAddress.setOnClickListener(new AddressClick());
+//			layAddress.setOnClickListener(new AddressClick());
 			
 			if (list_cooking.size() > 0) {
 				gvResCooking.setSelector(new ColorDrawable(Color.TRANSPARENT));
@@ -618,7 +618,7 @@ public class HotelDetailActivity extends Activity {
 			bundle.putInt("type", Integer.valueOf(type));
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -635,7 +635,7 @@ public class HotelDetailActivity extends Activity {
 			bundle.putInt("id", Integer.valueOf(idstr));
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -650,7 +650,7 @@ public class HotelDetailActivity extends Activity {
 			bundle.putInt("id", Constants.sellerid);
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -665,7 +665,7 @@ public class HotelDetailActivity extends Activity {
 			bundle.putInt("id", Constants.sellerid);
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -680,7 +680,7 @@ public class HotelDetailActivity extends Activity {
 			bundle.putInt("id", Constants.sellerid);
 			intent.putExtras(bundle);
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -718,7 +718,7 @@ public class HotelDetailActivity extends Activity {
 				bundle.putInt("id", Constants.sellerid);
 				intent.putExtras(bundle);
 				startActivityForResult(intent, 2);
-				overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//				overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 			}
 		}
 		
@@ -790,7 +790,7 @@ public class HotelDetailActivity extends Activity {
 				Constants.list_seller_detail = null;
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}
@@ -838,7 +838,7 @@ public class HotelDetailActivity extends Activity {
 				i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK & Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
 				i.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
 				startActivity(i);
-				overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//				overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 				
 //				Intent i2 = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q="
 //						+ 31.386608 + "," + 120.79959 + "(" + "³ÎºþÖ®ÐÇ£¨Ñô³Îºþµê£©" + ")"));
@@ -876,7 +876,7 @@ public class HotelDetailActivity extends Activity {
 //		    		intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+phone));
 		    		intent = new Intent (Intent.ACTION_DIAL, Uri.parse("tel:" + phone));
 					startActivity(intent);
-					overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//					overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		    		break;
 		    	default:
 		    		break;
@@ -913,7 +913,7 @@ public class HotelDetailActivity extends Activity {
 		    		bundle.putInt("to", 1);
 		    		intent.putExtras(bundle);
 		    		startActivityForResult(intent, 1);
-		    		overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//		    		overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		    		break;
 		    	default:
 		    		break;

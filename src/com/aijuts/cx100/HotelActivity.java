@@ -129,7 +129,7 @@ public class HotelActivity extends Activity {
 		//如果按下的是返回键，并且没有重复
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -204,6 +204,10 @@ public class HotelActivity extends Activity {
 	}
 	
 	public void asyHotel0() {
+		pbWait.setVisibility(View.GONE);
+		tvTag.setText(tagInfo);
+		tvTag.setVisibility(View.VISIBLE);
+		layBody.setVisibility(View.VISIBLE);
 		//距离
 		ArrayAdapter<String> disAdapter = new ArrayAdapter<String>(HotelActivity.this, R.layout.myspinner, list_distance);
 		disAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -232,10 +236,10 @@ public class HotelActivity extends Activity {
 			footView.setVisibility(View.GONE);
 			break;
 		}
-		pbWait.setVisibility(View.GONE);
-		tvTag.setText(tagInfo);
-		tvTag.setVisibility(View.VISIBLE);
-		layBody.setVisibility(View.VISIBLE);
+//		pbWait.setVisibility(View.GONE);
+//		tvTag.setText(tagInfo);
+//		tvTag.setVisibility(View.VISIBLE);
+//		layBody.setVisibility(View.VISIBLE);
 	}
 	
 	public void asyHotel1() {
@@ -293,7 +297,7 @@ public class HotelActivity extends Activity {
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}
@@ -325,7 +329,7 @@ public class HotelActivity extends Activity {
 			try {
 				if (scrollState == OnScrollListener.SCROLL_STATE_IDLE && isRefreshFoot) {
 					if (isRefreshFootIng == false) {
-						footView.setVisibility(view.VISIBLE);
+						footView.setVisibility(View.VISIBLE);
 						asy = "1";
 						asyncTaskHelper = new AsyncTaskHelper();
 						asyncTaskHelper.execute(asy);
@@ -354,7 +358,7 @@ public class HotelActivity extends Activity {
 //			intent.putExtras(bundle);
 			Constants.sellerid = Integer.valueOf(list.get(arg2).get("userid") + "");
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}

@@ -193,7 +193,7 @@ public class BookingActivity extends Activity {
 				imm.hideSoftInputFromWindow(etName.getWindowToken(), 0);
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -426,7 +426,7 @@ public class BookingActivity extends Activity {
 			intent.putExtra("info", order.getCommitInfo());
 			setResult(RESULT_OK, intent);
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			break;
 		}
 		pdWait.dismiss();
@@ -442,7 +442,7 @@ public class BookingActivity extends Activity {
 				imm.hideSoftInputFromWindow(etName.getWindowToken(), 0);
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}

@@ -144,7 +144,7 @@ public class GuidePageActivity extends Activity {
 			intent = new Intent(GuidePageActivity.this, MainActivity.class);
 			startActivity(intent);
 			finish();
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
     	
     }

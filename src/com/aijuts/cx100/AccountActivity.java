@@ -201,7 +201,7 @@ public class AccountActivity extends Activity {
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
 			location.setIsUpdateUserCenter(1);
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -461,7 +461,7 @@ public class AccountActivity extends Activity {
 			// TODO Auto-generated method stub
 			location.setIsUpdateUserCenter(1);
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}
@@ -527,7 +527,7 @@ public class AccountActivity extends Activity {
 				break;
 			}
 			startActivityForResult(intent, 1);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}

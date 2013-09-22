@@ -129,7 +129,7 @@ public class MainActivity extends Activity {
 		//如果按下的是返回键，并且没有重复
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -200,6 +200,8 @@ public class MainActivity extends Activity {
 	}
 	
 	public void asyHotel() {
+		pbWait.setVisibility(View.GONE);
+		layBody.setVisibility(View.VISIBLE);
 		switch (exceptionNo) {
 		case -2:
 			Toast.makeText(MainActivity.this, "访问服务器失败", Toast.LENGTH_SHORT).show();
@@ -259,8 +261,8 @@ public class MainActivity extends Activity {
 		gvTitle.setAdapter(mainGvTitleAdapter);
 		gvTitle.setOnItemClickListener(new TitleItemClick());
 		
-		pbWait.setVisibility(View.GONE);
-		layBody.setVisibility(View.VISIBLE);
+//		pbWait.setVisibility(View.GONE);
+//		layBody.setVisibility(View.VISIBLE);
 	}
 	
 	class LeftClick implements OnClickListener{
@@ -269,7 +271,7 @@ public class MainActivity extends Activity {
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}
@@ -288,7 +290,7 @@ public class MainActivity extends Activity {
 			intent = new Intent(MainActivity.this, HotelDetailActivity.class);
 			Constants.sellerid = Integer.valueOf(list_hotel.get(id).get("id") + "");
 			startActivity(intent);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -372,7 +374,7 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 				break;
 			}
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}

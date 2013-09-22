@@ -96,7 +96,7 @@ public class UserLoginActivity extends Activity {
 				imm.hideSoftInputFromWindow(etUserName.getWindowToken(), 0);
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -112,7 +112,7 @@ public class UserLoginActivity extends Activity {
 				imm.hideSoftInputFromWindow(etUserName.getWindowToken(), 0);
 			}
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}
@@ -124,7 +124,7 @@ public class UserLoginActivity extends Activity {
 			// TODO Auto-generated method stub
 			intent = new Intent(UserLoginActivity.this, UserRegActivity.class);
 			startActivityForResult(intent, 1);
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -251,13 +251,13 @@ public class UserLoginActivity extends Activity {
 				bundle.putString("userid", userData.getUserid());
 				intent.putExtras(bundle);
 				startActivity(intent);
-				overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//				overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 				break;
 			case 1:
 				Toast.makeText(UserLoginActivity.this, "µÇÂ¼³É¹¦", Toast.LENGTH_SHORT).show();
 				intent = new Intent(UserLoginActivity.this, HotelDetailActivity.class);
 				setResult(RESULT_OK, intent);
-				overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//				overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 				break;
 			}
 			finish();

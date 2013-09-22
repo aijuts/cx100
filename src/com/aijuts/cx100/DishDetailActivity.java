@@ -102,7 +102,7 @@ public class DishDetailActivity extends Activity {
 		//如果按下的是返回键，并且没有重复
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 			return false;
 		}
 		return false;
@@ -243,7 +243,7 @@ public class DishDetailActivity extends Activity {
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}

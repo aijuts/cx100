@@ -257,7 +257,7 @@ public class UserCenterActivity extends Activity {
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
 			finish();
-			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//			overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 		}
 		
 	}
@@ -296,7 +296,7 @@ public class UserCenterActivity extends Activity {
 				Toast.makeText(UserCenterActivity.this, "¼´½«¿ª·Å", Toast.LENGTH_SHORT).show();
 				break;
 			}
-			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
+//			overridePendingTransition(R.anim.push_left_in, R.anim.zoom_exit_2);
 		}
 		
 	}
@@ -361,7 +361,7 @@ public class UserCenterActivity extends Activity {
 			startActivity(intent);
 			break;
 		}
-		overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
+//		overridePendingTransition(R.anim.zoom_enter_2, R.anim.push_right_out);
 	}
 	
 	public void exitLogin() {
