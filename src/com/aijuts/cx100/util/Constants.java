@@ -99,7 +99,7 @@ public class Constants {
 		"0.5", "1", "2", "5", "10", "0"
 	};
 	
-	public static int sp_dis;
+	public static int sp_dis = 5;
 	
 	public static PopularSeller popularSeller;
 	

@@ -268,16 +268,16 @@ public class UserLoginActivity extends Activity {
 		case 4:
 			Toast.makeText(UserLoginActivity.this, "密码不能低于6位！", Toast.LENGTH_SHORT).show();
 			break;
+		case 5:
+			Toast.makeText(UserLoginActivity.this, "登录失败！该用户名为商家账号，请用会员账号登录！", Toast.LENGTH_SHORT).show();
+			break;
 		}
 		pbWait.setVisibility(View.GONE);
 		pdWait.dismiss();
 		
-		InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);  
-		//得到InputMethodManager的实例
+		InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 		if (imm.isActive()) {
-			//如果开启
-			imm.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, InputMethodManager.HIDE_NOT_ALWAYS); 
-			//关闭软键盘，开启方法相同，这个方法是切换开启与关闭状态的
+			imm.hideSoftInputFromWindow(etUserName.getWindowToken(), 0);
 		}
 	}
 	
@@ -292,7 +292,11 @@ public class UserLoginActivity extends Activity {
 				if (userData.getUserid().equals("")) {
 					exceptionNo = 0;
 				}else {
-					exceptionNo = 1;
+					if (userData.getType().equals("1")) {
+						exceptionNo = 1;
+					}else if (userData.getType().equals("2")) {
+						exceptionNo = 5;
+					}
 				}
 			}else {
 				exceptionNo = -1;
